@@ -4,15 +4,11 @@ A simple benchmark for LLMs on Monopoly
 Monopoly LLMs Benchmark
 Valeriy, Sanzhar
 
-Desc - a lightweight test suite that evaluates how well large language models understand and play Monopoly.
+Desc - a lightweight test suite to evaluate LLMs on monopoly by competing with each other. 
 
-Purpose of the Program - to measure an LLM’s reasoning, decision-making, and rule-comprehension abilities using structured Monopoly-themed questions.
+We will need:
+- A fully featured monopoly simulation library (board state, auctions, trades, bankruptcy, etc.)
+- An agentic harness for the models (current board representation, oponent actions, tool calls for actions on their turn)
+- A benchmark runner script (runs multiple games in parallel, computes each model's elo using FFA elo algorithm.)
+- DB storing all model context and game state, for each game, for further analysis later.
 
-Todolist:
-
-Define Monopoly rule categories
-Create question sets (easy → hard)
-Implement scoring system
-Add evaluation script
-Test on several LLMs
-Generate comparison report
